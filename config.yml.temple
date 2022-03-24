@@ -1,0 +1,33 @@
+#注意冒号后边都有个空格 别删别删
+#格式报错自行百度yaml格式在线校验进去测试下就行了...
+#任务列表 任务1&任务2
+cbList: Candy
+
+#推送参数
+Push:
+#企业微信推送
+  qywx:
+    corpsecret: 
+    corpid: 
+    agentid: 
+    mediaid:
+#telegram推送     
+  tgpushkey:
+    tgbotoken: 
+    chatid: 
+#server酱turbo版    
+  sckey: 
+#qmsg酱  
+  qmsgkey:
+#推送加  
+  pushplustoken: 
+
+           
+#4399游戏盒之疯狂游乐城 ua必填
+youlecheng:
+  scookie: 
+  SMid: 
+  device: 
+  udid: 
+  UA: 
+  
