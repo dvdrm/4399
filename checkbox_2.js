@@ -1,6 +1,6 @@
 /*
 cron: 28 8 * * *
-new Env('签到盒');
+new Env('4399签到1');
 */
 const yaml = require("js-yaml");
 const fs = require('fs');
@@ -10,17 +10,17 @@ config = null,notify = null,signlist = [],logs = ""
 
 //自行添加任务 名字看脚本里的文件名 比如csdn.js 就填"csdn"
 var cbList = []
-if (fs.existsSync("./config.yml")) config = yaml.load(fs.readFileSync('./config.yml', 'utf8'));
+if (fs.existsSync("./config.yml")) config = yaml.load(fs.readFileSync('./4399/config.yml', 'utf8'));
 if (fs.existsSync("./sendNotify.js")) notify = require('./sendNotify')
 let QL = process.env.QL_DIR
 if (QL) {
     console.log("当前是青龙面板,路径："+QL)
     cbList = process.env.cbList ? process.env.cbList.split("&") : []
-    if (!fs.existsSync(`/${QL}/scripts/4399/config/config_2.yml`)) {
-        console.log("您还没有填写cookies配置文件,请配置好再来运行8...\n配置文件路径/ql/scripts/4399/config/config_2.yml\n如没有文件复制一份config.yml.temple并改名为config_2.yml")
+    if (!fs.existsSync(`/${QL}/config/4399/config_2.yml`)) {
+        console.log("您还没有填写cookies配置文件,请配置好再来运行8...\n配置文件路径/ql/config/4399/config_2.yml\n如没有文件复制一份config.yml.temple并改名为config_2.yml")
         return;
     } else{
-    if(yaml.load) config = yaml.load(fs.readFileSync(`/${QL}/scripts/4399/config/config_2.yml`, 'utf8'))
+    if(yaml.load) config = yaml.load(fs.readFileSync(`/${QL}/config/4399/config_2.yml`, 'utf8'))
     else console.log("亲,您的依赖掉啦,但是没有完全掉 请重装依赖\npnpm install  axios crypto crypto-js fs iconv-lite js-yaml yargs\n或者\nnpm install  axios crypto crypto-js fs iconv-lite js-yaml yargs")
      }
 }
