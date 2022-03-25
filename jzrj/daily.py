@@ -1,7 +1,7 @@
 # 注册地址：http://appapi.jinzhuqianguan.com/home/index?uucode=9VT87B2700&channel=10000
 #  本人邀请码：9VT87B2700
 '''
-cron: 1 0 * * *  python3 daily.py
+cron: 01 0,6,18 * * *  python3 daily.py
 new Env('金猪日记日常');
 '''
 
