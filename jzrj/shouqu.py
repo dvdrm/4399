@@ -10,7 +10,7 @@ import os
 
 def collects(Authorization,User_Agent):
     s = requests.session()
-    collect_url = "http://appapi.jinzhuqianguan.com/api/Member/getCoin1"
+    collect_url = "http://appapi.jinzhuqianguan.com/api/Member/getCoin"
     get_data = {
         "brand":"HUAWEI",
         "platform":"android",
@@ -25,8 +25,10 @@ def collects(Authorization,User_Agent):
     print("领取奖励："+str(int(r["coin"]/10)))
 
 
-User_Agent = ["Mozilla/5.0 (Linux; U; Android 10; zh-cn; YAL-AL00 Build/HUAWEIYAL-AL00) AppleWebKit/533.1 (KHTML, like Gecko) Version/5.0 Mobile Safari/533.1"]
+User_Agent = ["Dalvik/2.1.0 (Linux; U; Android 11; Mi9 Pro 5G Build/RKQ1.200826.002)-ksad-android-3.3.23"]
 # cookice
 JZ_Authorizations=os.environ['JZ_Authorizations'].split(",")
 for Authorization,User_Agent in zip(JZ_Authorizations,User_Agent):
     collects(Authorization,User_Agent)
+
+    
