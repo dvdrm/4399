@@ -10,7 +10,7 @@ import os
 
 def collects(Authorization,User_Agent):
     s = requests.session()
-    collect_url = "http://appapi.jinzhuqianguan.com/api/Member/getCoin"
+    collect_url = "http://appapi.jinzhuqianguan.com/api/Member/getCoin1"
     get_data = {
         "brand":"HUAWEI",
         "platform":"android",
