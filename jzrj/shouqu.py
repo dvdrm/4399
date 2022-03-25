@@ -10,7 +10,7 @@ import os
 
 def collects(Authorization,User_Agent):
     s = requests.session()
-    collect_url = "http://appapi.jinzhuqianguan.com/api/Member/getCoin"
+    collect_url = "http://appapi.jinzhuqianguan.com/api/Member/getCoin1"
     get_data = {
         "brand":"HUAWEI",
         "platform":"android",
@@ -29,6 +29,4 @@ User_Agent = ["Dalvik/2.1.0 (Linux; U; Android 11; Mi9 Pro 5G Build/RKQ1.200826.
 # cookice
 JZ_Authorizations=os.environ['JZ_Authorizations'].split(",")
 for Authorization,User_Agent in zip(JZ_Authorizations,User_Agent):
-    collects(Authorization,User_Agent)
-
-    
+    collects(Authorization,User_Agent) 
