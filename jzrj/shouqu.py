@@ -14,7 +14,7 @@ def collects(Authorization,User_Agent):
     get_data = {
         "brand":"HUAWEI",
         "platform":"android",
-        "channel":"10000",
+        "channel":"400000",
     }
     headers = {
         "Authorization":Authorization,
