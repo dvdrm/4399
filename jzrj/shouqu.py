@@ -22,7 +22,7 @@ def collects(Authorization,User_Agent):
     }
     r = s.post(url=collect_url,data=get_data,headers=headers).json()
     print(r["msg"])
-    print("领取奖励："+str(int(r["coin1"]/10)))
+    print("领取奖励："+r["coin"])
 
 
 User_Agent = ["Dalvik/2.1.0 (Linux; U; Android 11; Mi9 Pro 5G Build/RKQ1.200826.002)-ksad-android-3.3.23"]
