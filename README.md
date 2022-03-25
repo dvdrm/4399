@@ -1,1 +1,1 @@
-	ql repo https://github.com/dvdrm/4399.git "checkbox_" "" "scripts|config|Template|sendmsg"
+	ql repo https://github.com/dvdrm/Private.git "other|checkbox_" "" "scripts|config|Template|sendmsg"
