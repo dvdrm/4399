@@ -1,6 +1,6 @@
 /*
-cron: 45 10,22 * * *
-new Env('4399账号6');
+cron: 50 7,17 * * *
+new Env('4399账号7');
 */
 const yaml = require("js-yaml");
 const fs = require('fs');
