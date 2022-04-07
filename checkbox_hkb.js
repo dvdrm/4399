@@ -1,5 +1,5 @@
 /*
-cron: 50 7,17 * * *
+cron: 0 12 * * 6
 new Env('好快爆任务');
 */
 const yaml = require("js-yaml");
