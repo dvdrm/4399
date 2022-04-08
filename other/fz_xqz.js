@@ -1,6 +1,6 @@
 /*
-[task_local]
-cron 10 6 * * * fz_xqz.js, tag=闲趣赚, enabled=true
+cron: 10 6 * * *
+new Env('闲趣赚');
 
 @肥皂 3.22 闲趣赚  一天0.1-0.3或者更高
 苹果&安卓下载地址：复制链接到微信打开   https://a.jrpub.cn/3345249
